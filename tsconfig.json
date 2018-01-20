@@ -1,0 +1,21 @@
+{
+    "compileOnSave": true,
+    "compilerOptions": {
+        "target": "es5",
+        "outDir": "./build",
+        "declaration": true,
+        "module": "commonjs",
+        "lib": [
+            "es5",
+            "es2015.promise",
+            "es2015.core"
+        ]
+    },
+    "include": [
+        "src/**/*"
+    ],
+    "exclude": [
+        "node_modules",
+        "test/*"
+    ]
+}

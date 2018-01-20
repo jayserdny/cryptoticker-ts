@@ -1,0 +1,24 @@
+{
+  "name": "cryptoticker-ts",
+  "version": "1.0.0",
+  "description": "Rewritten version of the cryptoticker library using TS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jayserdny/cryptoticker-ts.git"
+  },
+  "keywords": [
+    "cryptocurrency",
+    "cryptoticker",
+    "blockchain"
+  ],
+  "author": "Jayser Mendez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jayserdny/cryptoticker-ts/issues"
+  },
+  "homepage": "https://github.com/jayserdny/cryptoticker-ts#readme"
+}
