@@ -22,7 +22,7 @@ crypto.getPrice('bitcoin').then(data => {
 });
 ```
 ```sh
-Output should be an array with the moderators
+Output should be an array with the prices
 ```
 ### TypeScript
 ```typescript
@@ -32,7 +32,7 @@ crypto.getPrice('bitcoin').then(data => {
 });
 ```
 ```sh
-Output should be an array with the moderators
+Output should be an array with the prices
 ```
 ### AMD
 ```javascript
