@@ -13,5 +13,33 @@ To install this dependence, you only need to run the following command in your c
 npm i cryptoticker-ts --save
 ```
 
+## Examples
+### Javascript
+```javascript
+var crypto = require('cryptoticker-ts');
+crypto.getPrice('bitcoin').then(data => {
+    console.log(data)
+});
+```
+```sh
+Output should be an array with the moderators
+```
+### TypeScript
+```typescript
+import * as crypto from 'cryptoticker-ts';
+crypto.getPrice('bitcoin').then(data => {
+    console.log(data)
+});
+```
+```sh
+Output should be an array with the moderators
+```
+### AMD
+```javascript
+define(function(require,exports,module) {
+  var crypto = require('cryptoticker-ts');
+});
+```
+
 ## How To Contribute?
 To contribute to this library, fork the repo, make your changes, run the npm test command and if it pass, make a PR (Pull Request)
