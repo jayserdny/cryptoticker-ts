@@ -20,5 +20,10 @@
   "bugs": {
     "url": "https://github.com/jayserdny/cryptoticker-ts/issues"
   },
-  "homepage": "https://github.com/jayserdny/cryptoticker-ts#readme"
+  "homepage": "https://github.com/jayserdny/cryptoticker-ts#readme",
+  "dependencies": {
+    "@types/node": "^9.3.0",
+    "@types/request": "^2.0.12",
+    "request": "^2.83.0"
+  }
 }
