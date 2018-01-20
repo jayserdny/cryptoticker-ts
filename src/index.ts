@@ -15,9 +15,10 @@ const getCrypto = function(crypto: string) {
 /**
  * @method price: Get price from coinMarketCap
  * @param {string} crypto: crypto to query
+ * @returns A promise with the prices of this coin
  */
-export function price(crypto: string): Promise<any> {
-    return new Promise((resolve, reject) => {
+export function price(crypto: string): Promise<Array<Price>> {
+    return new Promise<Array<Price>>((resolve, reject) => {
         if (!crypto) reject(new Error('Coin Not Found'));
 
         else {
@@ -30,8 +31,14 @@ export function price(crypto: string): Promise<any> {
     });
 }
 
-export function priceWCI(crypto, key): Promise<any> {
-    return new Promise((resolve, reject) => {
+/**
+ * @method priceWCI: Get price from worldCoinIndex
+ * @param {string} crypto: crypto to query
+ * @param {string} key: worldCoinIndex API key
+ * @returns A promise with the prices of this coin
+ */
+export function priceWCI(crypto: string, key?: string): Promise<Array<PriceWCI>> {
+    return new Promise<Array<PriceWCI>>((resolve, reject) => {
         if (!crypto) reject(new Error('Coin Not Found'));
         else if (!key) reject(new Error('Key Not Provided'));
         
@@ -52,10 +59,6 @@ export function priceWCI(crypto, key): Promise<any> {
     });
 }
 
-price('btc').then(data => {
-    console.log(data);
-})
-
 /**
  * INTERFACES
  */
@@ -75,5 +78,17 @@ export interface Price {
     percent_change_24h: string;
     percent_change_7d: string;
     last_updated: string;
+}
 
+export interface PriceWCI {
+    Label: string;
+    Name: string;
+    Price_btc: number;
+    Price_usd: number;
+    Price_cny: number;
+    Price_eur: number;
+    Price_gbp: number;
+    Price_rur: number;
+    Volume_24h: number;
+    Timestamp: number
 }
