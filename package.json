@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/jayserdny/cryptoticker-ts#readme",
   "dependencies": {
-    "request": "^2.83.0"
+    "request": "^2.88.0"
   },
   "devDependencies": {
     "@types/node": "^9.3.0",
